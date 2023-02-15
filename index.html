@@ -601,20 +601,20 @@
 
         </section>
 
-    
+
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
             <h2 class="section__title">Contact me</h2>
             <span class="section__subtitle">Get in touch</span>
 
-            <div class="contact__container container grid">
+            <div class="contact__container container grid contact1">
                 <div>
                     <div class="contact__information">
                         <i class="uil uil-phone-alt contact__icon"></i>
 
                         <div>
                             <h3 class="contact__title">Call me</h3>
-                            <span class="contatc__subtitle"><a href="tel:+994506472665">(+994) 50 647 26 65</a> </span>
+                            <span class="contatc__subtitle"> <a href="tel:+994506472665">(+994) 50 647 26 65</a></span>
                         </div>
                     </div>
 
@@ -623,7 +623,7 @@
 
                         <div>
                             <h3 class="contact__title">E-mail</h3>
-                            <span class="contatc__subtitle"> <a href="mailto:eshqinferzeliyev@gmail.com">eshqinferzeliyev@gmail.com.<br></span>
+                            <span class="contatc__subtitle"> <a href="mailto:eshqinferzeliyev@gmail.com">  eshqinferzeliyev@gmail.com</a></span>
                         </div>
                     </div>
 
@@ -632,39 +632,40 @@
 
                         <div>
                             <h3 class="contact__title">Location</h3>
-                            <span class="contatc__subtitle">Baku, Nizami district</span>
+                            <span class="contatc__subtitle">Baku, Nizami district</span> 
                         </div>
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form action="sendmail.php" method="post" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" class="contact__input"  name="name">
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">E-mail</label>
-                            <input type="email" class="contact__input">
+                            <input type="email" class="contact__input" name="email">
                         </div>
                     </div>
 
                     <div class="contact__content">
                         <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
+                        <input type="text" class="contact__input" name="subject">
                     </div>
 
                     <div class="contact__content">
                         <label for="" class="contact__label">Description</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact__input"></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        
+                        <a href="mailto:eshqinferzeliyev@gmail.com class=" class="button button--flex">
                             Send message
                             <i class="uil uil-message button__icon"></i>
-                        </a>
+                        </a> 
                     </div>
                 </form>
             </div>
